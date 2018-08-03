@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROC [dbo].[GetPerson]
+@name NVARCHAR(50)
+AS
+BEGIN
+	SELECT * FROM dbo.testscc1 WHERE name=@name
+end
+GO
